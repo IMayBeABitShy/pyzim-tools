@@ -103,6 +103,6 @@ deps = [
     "pydoctor",
 ]
 commands = [
-    ["pydoctor", "--project-name=PyZim-Tools", "--project-version=0.0.1", "--project-url=https://github.com/IMayBeABitShy/pyzim-tools", "--intersphinx", "https://docs.python.org/3/objects.inv", "--intersphinx", "https://pyzstd.readthedocs.io/en/latest/objects.inv", "--intersphinx", "https://python-zstandard.readthedocs.io/en/latest/objects.inv", "--intersphinx", "https://bottlepy.org/docs/dev/objects.inv", "--intersphinx", "https://jinja.palletsprojects.com/en/stable/objects.inv", "--warnings-as-errors", "--make-html", "--html-output", "html/apidocs", "pyzimtools", ],
+    ["pydoctor", "--project-name=PyZim-Tools", "--project-version=0.0.1", "--project-url=https://github.com/IMayBeABitShy/pyzim-tools", "--intersphinx", "https://docs.python.org/3/objects.inv", "--intersphinx", "https://pyzstd.readthedocs.io/en/latest/objects.inv", "--intersphinx", "https://python-zstandard.readthedocs.io/en/latest/objects.inv", "--intersphinx", "https://bottlepy.org/docs/dev/objects.inv", "--intersphinx", "https://jinja.palletsprojects.com/en/stable/objects.inv", "--intersphinx", "https://pyzim.readthedocs.io/en/latest/objects.inv", "--warnings-as-errors", "--make-html", "--html-output", "html/apidocs", "pyzimtools", ],
 ]
 
