@@ -1,0 +1,16 @@
+{# Base template used for all sites. Expects 'to_root' argument. #}
+
+<!DOCTYPE html>
+<HTML>
+    <HEAD>
+        {% block head %}
+            <link rel="stylesheet" href="{{ to_root }}/_pyzimserver/style.css">
+            {% block title %}
+            {% endblock %}
+        {% endblock %}
+    </HEAD>
+    <BODY>
+        {% block body %}
+        {% endblock %}
+    </BODY>
+</HTML>

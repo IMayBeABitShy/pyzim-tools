@@ -1,0 +1,20 @@
+{# A list of available ZIMs. Expects 'to_root' and 'zims' argument. #}
+
+<DIV class="zimlist-wrapper">
+    <UL class="zimlist">
+        {% for zim in zims %}
+            <LI>
+                <A class="zimlink" href="{{ to_root }}/{{ zim.path }}/">
+                    <DIV class="zim">
+                        <img src="/_pyzimserver/illustration/{{ zim.path }}"</img>
+                        <DIV class="zimdata">
+                            <P class="zimtitle">{{ zim.title }}</P>
+                            <P class="zimdescription">{{ zim.description }}</P>
+                            <P class="ziminfo"><B>Language:</B> {{ zim.language }} <B>Date:</B> {{ zim.date }}</P>
+                        </DIV>
+                    </DIV>
+                </A>
+            </LI>
+        {% endfor %}
+    </UL>
+</DIV>

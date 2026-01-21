@@ -1,0 +1,12 @@
+{# Template used for a page listing available ZIMs. Expects 'to_root' and 'zims' argument. #}
+{% extends "base.html.jinja" %}
+
+{% block title %}
+    <TITLE>Available  ZIM files</TITLE>
+    <CENTER>
+        <H1>Available ZIM files</H1>
+    </CENTER>
+    {% with zims=zims %}
+        {% include "zimlist.html.jinja" %}
+    {% endwith %}
+{% endblock %}

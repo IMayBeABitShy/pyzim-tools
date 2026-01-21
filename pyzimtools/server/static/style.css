@@ -1,0 +1,79 @@
+/* stylesheet for pyzim-server */
+
+/* zim overview */
+
+.zimlist {
+  list-style-type: none;
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+}
+
+.zimlink {
+  text-decoration: none;
+}
+
+.zim {
+  display: flex;
+  border: 1px solid lightgray;
+  border-radius: 1em;
+  padding: 0.5em;
+  padding-top: 0em;
+  margin-bottom: 1em;
+  background-color: #eaeaea;
+
+}
+
+.zim * {
+  color: initial;
+  display: block;
+}
+
+.zim .zimdata {
+  padding-left: 2em;
+  padding-top: 0em;
+  margin-top: 0em;
+}
+
+.zim img {
+  display: block;
+  object-fit: contain;
+  width: 6em;
+  height: auto;
+
+}
+
+.zimtitle {
+  height: fit-content;
+  width: auto;
+  font-size: 1.6em;
+}
+
+.zimdescription {
+  background: #f8f8f8;
+  border: 1px solid #f0f0f0;
+  border-radius: 0.25em;
+  padding: 0.2em;
+}
+
+.ziminfo {
+  display: inline-flex;
+}
+.ziminfo b {
+  padding-left: 1em;
+  padding-right: 0.5em;
+}
+
+.ziminfo b:first-child {
+  padding-left: 0em;
+}
+
+/* --- mobile --- */
+
+@media only screen and (max-width: 650px) {
+  .zimlist {
+    columns: 1;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+  }
+}
