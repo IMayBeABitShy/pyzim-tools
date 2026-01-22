@@ -11,6 +11,9 @@ The following tools are included in this package:
 
 ## Install
 
+First, you must decice on whether you want to install optional dependencies as well. This is neccessary if you want to use oauth2 authentication or the search (once it's been implemented, at least). The installation of extra dependencies is marked by appending `[all]` to the package names. The commands in this section assume that you do want to install the extra dependencies. If you don't want them, simply ommit the `[all]` part.
+If you do want to install extra dependencies, you'll likely need to install `xapian` and `libicu` first. On debian systems, the required packages are `libxapian-dev xapian-tools libicu-dev pkgconf`.
+
 Unfortunately, PyPI does not allow us to upload packages with non-PyPI dependencies, thus you need to install this package directly from github:
 
 `pip install -U "pyzim-tools[all] @ git+https://github.com/IMayBeABitShy/pyzim-tools.git"`
@@ -18,8 +21,6 @@ Unfortunately, PyPI does not allow us to upload packages with non-PyPI dependenc
 Alternatively (and probably preferably), install using [pipx](https://github.com/pypa/pipx):
 
 `pipx install "pyzim-tools[all] @ git+https://github.com/IMayBeABitShy/pyzim-tools.git"`
-
-**Note:** `pyzim-tools` uses various optional dependencies for optional features and dev environments. The above commands install all optional dependencies. If you don't want them, simply omit the `[all]` at the end.
 
 ## pyzim-server - a HTTP server for serving ZIM files
 
@@ -41,7 +42,7 @@ Alternatively (and probably preferably), install using [pipx](https://github.com
 
  - search
 
-In it's most primitive form, `pyzim-server` can be used as simple as running `pyzim-server` command. Use `pyzim-server --help` for more options.
+In it's most primitive form, `pyzim-server` can be used as simple as running `pyzim-server` (or `pyzim-server --port 8080`) command. Use `pyzim-server --help` for more options.
 
 If you want to use more complex setups, however, you are going to need a configuration file. Run `pyzim-server --write-config my_config.ini` to generate an example configuration, edit it as needed and run `pyzim-server --config my_config.ini` to use it.
 
