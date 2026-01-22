@@ -27,9 +27,10 @@ classifiers = [
 ]
 requires-python = ">=3.7"
 dependencies = [
-    "python-zim@git+https://github.com/IMayBeABitShy/pyzim",
+    "python-zim @ git+https://github.com/IMayBeABitShy/pyzim.git",
     "bottle",
     "tqdm",
+    "jinja2",
 ]
 
 # cli scripts
@@ -48,7 +49,7 @@ oauth = [
 all = [
     "tox",
     "requests",
-    "python-zim@git+https://github.com/IMayBeABitShy/pyzim/[all]",
+    "python-zim[all] @ git+https://github.com/IMayBeABitShy/pyzim.git",
 ]
 
 # wheel generation

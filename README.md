@@ -13,11 +13,11 @@ The following tools are included in this package:
 
 Unfortunately, PyPI does not allow us to upload packages with non-PyPI dependencies, thus you need to install this package directly from github:
 
-`pip install -U pyzim-tools@git+https://github.com/IMayBeABitShy/pyzim-tools/[all]`
+`pip install -U "pyzim-tools[all] @ git+https://github.com/IMayBeABitShy/pyzim-tools.git"`
 
 Alternatively (and probably preferably), install using [pipx](https://github.com/pypa/pipx):
 
-`pipx install -U pyzim-tools@git+https://github.com/IMayBeABitShy/pyzim-tools/[all]`
+`pipx install "pyzim-tools[all] @ git+https://github.com/IMayBeABitShy/pyzim-tools.git"`
 
 **Note:** `pyzim-tools` uses various optional dependencies for optional features and dev environments. The above commands install all optional dependencies. If you don't want them, simply omit the `[all]` at the end.
 
